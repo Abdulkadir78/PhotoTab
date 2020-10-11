@@ -1,0 +1,27 @@
+.post-profile-pic {
+  width: 40px;
+  height: 40px;
+  border: 1px black solid;
+  border-radius: 40px;
+  margin-left: 9px;
+  margin-right: 5px;
+}
+
+.post-header {
+  padding: 10px 0;
+}
+
+.comments {
+  margin-top: 10%;
+}
+
+.comment,
+.caption {
+  word-wrap: break-word;
+}
+
+.delete-btn,
+.like-btn,
+.view-comments {
+  cursor: pointer;
+}

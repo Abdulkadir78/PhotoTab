@@ -1,0 +1,82 @@
+.followers,
+.following {
+  cursor: pointer;
+  overflow: auto;
+}
+
+.delete-post-btn {
+  cursor: pointer;
+}
+
+.posts {
+  cursor: default;
+}
+
+.follower-pic,
+.following-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+}
+
+.follower-name,
+.following-name {
+  margin-top: 0.5rem;
+}
+
+.profile-picture {
+  width: 175px;
+  height: 175px;
+  border: 1px white solid;
+  border-radius: 175px;
+}
+
+.remove-btn {
+  position: relative;
+  top: -7rem;
+  left: 7.5rem;
+}
+
+.edit-profile-pic {
+  width: 120px;
+  height: 120px;
+  border: 1px white solid;
+  border-radius: 175px;
+}
+
+.bio {
+  font-size: 1.2rem;
+}
+
+.logout-btn {
+  margin-left: 1rem;
+  border: 1px #2bbbad solid;
+}
+
+.logged-out {
+  margin-top: -5rem;
+}
+
+.masonry-grid {
+  display: flex;
+  margin-left: -30px;
+  width: auto;
+}
+
+.masonry-grid-column {
+  padding-left: 5px;
+}
+
+@media (max-width: 800px) {
+  .masonry-grid {
+    margin-left: -15px;
+  }
+
+  .masonry-grid-column {
+    padding-left: 15px;
+  }
+
+  .masonry-grid-column > div {
+    margin-bottom: 15px;
+  }
+}

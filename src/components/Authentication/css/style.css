@@ -1,0 +1,15 @@
+.password-eye {
+  cursor: pointer;
+  right: 0.5rem;
+  top: 1rem !important;
+}
+
+.brand-logo {
+  font-family: "Great Vibes", cursive;
+}
+
+@media (min-width: 768px) {
+  .login-form {
+    margin-top: 3rem;
+  }
+}
