@@ -3,6 +3,9 @@
 # config
 /src/firebase
 firebase-debug.log
+.firebase
+.firebaserc
+firebase.json
 
 # dependencies
 /node_modules
