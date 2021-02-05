@@ -20,7 +20,7 @@ function SearchModal({ authUser }) {
 
       snap.docs.forEach((doc) => {
         if (
-          doc.data().username.includes(usernameField) &&
+          doc.data().username.includes(usernameField.trim().toLowerCase()) &&
           doc.data().username !== authUser.username
         ) {
           const { username, profilePic } = doc.data();
