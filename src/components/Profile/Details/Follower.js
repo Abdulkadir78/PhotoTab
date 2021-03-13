@@ -21,13 +21,13 @@ function Follower({ followerId }) {
     return () => (mounted = false);
   }, [followerId, setFollower]);
 
-  return (
+  return follower ? (
     <Row>
       <Col s={4} m={2} offset="m3">
-        <a href={follower ? `/${follower.username}` : ""}>
+        <a href={`/users/${follower.username}`}>
           <img
             src={
-              (follower && follower.profilePic) ||
+              follower.profilePic ||
               `${process.env.PUBLIC_URL}/images/default-profile.png`
             }
             alt="profile-pic"
@@ -37,12 +37,12 @@ function Follower({ followerId }) {
       </Col>
 
       <Col s={4} m={1} className="follower-name">
-        <a href={follower ? `/${follower.username}` : ""}>
-          <h6 className="black-text">{follower && follower.username}</h6>
+        <a href={`/users/${follower.username}`}>
+          <h6 className="black-text">{follower.username}</h6>
         </a>
       </Col>
     </Row>
-  );
+  ) : null;
 }
 
 export default Follower;
