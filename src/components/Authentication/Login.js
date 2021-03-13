@@ -112,6 +112,12 @@ function Login({ history }) {
           </div>
         </form>
 
+        <div className="center row" hidden={showLoader}>
+          <Link to="/reset" className="teal-text text-lighten-2">
+            Forgot password?
+          </Link>
+        </div>
+
         <div className="center" hidden={showLoader}>
           Don't have an account?{" "}
           <Link to="/signup" className="teal-text text-lighten-2">
