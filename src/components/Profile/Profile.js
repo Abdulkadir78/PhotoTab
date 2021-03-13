@@ -207,8 +207,8 @@ function Profile(props) {
       </Row>
 
       <div className="center">
-        {user && user.username === username ? (
-          <Link to={`/${user.username}/liked`}>
+        {user && visitingUser && user.id === visitingUser.id ? (
+          <Link to={`/users/${user.username}/liked`}>
             <Button>Liked Posts</Button>
           </Link>
         ) : null}

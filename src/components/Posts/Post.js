@@ -200,7 +200,7 @@ function Post({ post, authUser, history }) {
           header={
             <>
               <div className="post-header">
-                <Link to={`/${username}`}>
+                <Link to={`/users/${username}`}>
                   <img
                     src={
                       profilePic ||
@@ -211,7 +211,7 @@ function Post({ post, authUser, history }) {
                   />
                 </Link>
                 <div className="card-title">
-                  <Link to={`/${username}`} className="black-text">
+                  <Link to={`/users/${username}`} className="black-text">
                     {username}
                   </Link>
                 </div>
@@ -226,7 +226,10 @@ function Post({ post, authUser, history }) {
                   <div key={comment.id}>
                     <p className="comment">
                       <b>
-                        <Link to={`/${comment.author}`} className="black-text">
+                        <Link
+                          to={`/users/${comment.author}`}
+                          className="black-text"
+                        >
                           {comment.author}
                         </Link>
                       </b>
@@ -321,7 +324,7 @@ function Post({ post, authUser, history }) {
           ]}
         >
           <p className="caption">
-            <Link to={`/${username}`} className="black-text">
+            <Link to={`/users/${username}`} className="black-text">
               <b>{username}</b>{" "}
             </Link>
             {post.caption}

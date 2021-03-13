@@ -27,7 +27,7 @@ function LikedPosts(props) {
             const { username } = snap.data();
             // users can only see their own liked posts
             if (username !== usernameL) {
-              return props.history.push(`/${usernameL}`);
+              return props.history.push(`/users/${usernameL}`);
             }
 
             setUser({ id: snap.id, ...snap.data() });

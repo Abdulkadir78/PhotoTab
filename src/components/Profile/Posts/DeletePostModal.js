@@ -46,7 +46,7 @@ function DeletePostModal({ post, user }) {
   };
 
   return redirect ? (
-    <Redirect to={`/${user.username}`} />
+    <Redirect to={`/users/${user.username}`} />
   ) : (
     <Modal
       header="Delete Post"

@@ -51,7 +51,7 @@ function PostById({ match: { params }, history }) {
       <Nav />
       <div className="section">
         <div className="container">
-          {user && user.username === post.authorName ? (
+          {user && user.id === post.authorId ? (
             <DeletePostModal post={post} user={user} />
           ) : null}
         </div>

@@ -57,7 +57,7 @@ function Notifications({ user }) {
       {notifs.map((notif) => (
         <CollectionItem key={notif.id} className="notif">
           <Link
-            to={notif.postId ? `/post/${notif.postId}` : `/${notif.who}`}
+            to={notif.postId ? `/post/${notif.postId}` : `/users/${notif.who}`}
             className="left black-text"
           >
             <b>{notif.who} </b>

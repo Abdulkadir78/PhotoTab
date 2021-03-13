@@ -59,7 +59,7 @@ function SignedInNavbar({ history, user }) {
 
             <li className="nav-link" data-for="profile" data-tip="Profile">
               {user && (
-                <Link to={`/${user.username}`}>
+                <Link to={`/users/${user.username}`}>
                   <img
                     src={
                       user.profilePic ||

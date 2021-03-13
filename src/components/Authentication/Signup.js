@@ -163,7 +163,6 @@ function Signup({ history }) {
                 value={email}
                 disabled={showLoader}
                 required
-                maxLength="20"
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>

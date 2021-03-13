@@ -96,7 +96,7 @@ function SearchModal({ authUser }) {
       {users.map((user) => (
         <Row key={user.id}>
           <Col s={4} m={2} offset="m3">
-            <a href={`/${user.username}`}>
+            <a href={`/users/${user.username}`}>
               <img
                 src={
                   user.profilePic ||
@@ -109,7 +109,7 @@ function SearchModal({ authUser }) {
           </Col>
 
           <Col s={4} m={1}>
-            <a href={`/${user.username}`}>
+            <a href={`/users/${user.username}`}>
               <h6 className="black-text">{user.username}</h6>
             </a>
           </Col>
